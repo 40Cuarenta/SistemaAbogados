@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PaginaAbogadoController">
+   <children>
+      <TableView fx:id="tablaAbogados" prefHeight="648.0" prefWidth="734.0">
+        <columns>
+          <TableColumn fx:id="idC" prefWidth="39.0" text="ID" />
+          <TableColumn fx:id="registroC" prefWidth="121.26409912109375" text="REGISTRO" />
+            <TableColumn fx:id="especialidadC" prefWidth="146.23593139648438" text="ESPECIALIDAD" />
+            <TableColumn fx:id="experienciaC" prefWidth="138.52474975585938" text="EXPERIENCIA" />
+            <TableColumn fx:id="honorarioHoraC" prefWidth="190.99993896484375" text="HONORARIOS/HORA" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" prefHeight="648.0" prefWidth="351.0" spacing="10.0" style="-fx-background-color: #3A5978;">
+         <children>
+            <Button fx:id="btnAgregarAbogado" mnemonicParsing="false" onMouseClicked="#agregarAbogado" prefHeight="26.0" prefWidth="144.0" text="AGREGAR ABOGADO" />
+            <Button fx:id="btnEditarAbogado" mnemonicParsing="false" onMouseClicked="#editarAbogado" prefHeight="26.0" prefWidth="144.0" text="EDITAR ABOGADO" />
+            <Button fx:id="btnEliminarAbogado" mnemonicParsing="false" onMouseClicked="#eliminarAbogado" prefHeight="26.0" prefWidth="144.0" text="ELIMINAR ABOGADO" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

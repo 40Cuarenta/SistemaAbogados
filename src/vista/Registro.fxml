@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="348.0" style="-fx-background-color: #F0F0F0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="controlador.RegistroController">
+   <children>
+      <VBox alignment="CENTER" layoutX="9.0" layoutY="14.0" prefHeight="600.0" prefWidth="378.0" spacing="10.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label prefHeight="43.0" prefWidth="198.0" text="Registro de Cliente">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="184.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../iconos/registro.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtNombre" alignment="CENTER" promptText="Ingresa tu Nombre" />
+            <TextField fx:id="txtApellido" alignment="CENTER" promptText="Ingresa tu Apellido" />
+            <TextField fx:id="txtCedula" alignment="CENTER" promptText="Ingresa tu Cédula" />
+            <TextField fx:id="txtEmail" alignment="CENTER" promptText="Ingresa tu Email (ejemplo@gmail.com)" />
+            <TextField fx:id="txtUser" alignment="CENTER" promptText="Ingresa un usuario (ejem. tuNombre+1223etc)" />
+            <PasswordField fx:id="txtPassword1" alignment="CENTER" promptText="Ingresa Contraseña" />
+            <PasswordField fx:id="txtPasswordActive" alignment="CENTER" promptText="Confirma tu Contraseña" />
+            <TextField fx:id="txtTelefono" alignment="CENTER" promptText="Ingresa tu Teléfono" />
+            <Button fx:id="btnRegistro" mnemonicParsing="false" onAction="#Registro" style="-fx-background-color: #2C3E50;" text="REGISTRAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#Cancelar" style="-fx-background-color: #D9534F;" text="CANCELAR" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="5.0" right="5.0" />
+   </padding>
+</AnchorPane>
